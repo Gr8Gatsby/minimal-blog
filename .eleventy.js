@@ -1,22 +1,19 @@
-const path = require("path");
+const isProduction = process.env.ELEVENTY_ENV === 'production';
+const baseUrl = isProduction ? '/minimal-blog/' : '/'; // Adjust 'minimal-blog' to your repo name
 
 module.exports = function(eleventyConfig) {
     // Pass through assets
     eleventyConfig.addPassthroughCopy('assets');
 
-    // Set base URL based on environment
-    const isGitHubPages = process.env.ELEVENTY_ENV === 'production';
-    const baseUrl = isGitHubPages ? '/minimal-blog/' : '/'; // Update this path to match your repo name
-
-    // Add the base URL to the template data
+    // Add global data for base URL
     eleventyConfig.addGlobalData('baseUrl', baseUrl);
 
     return {
         dir: {
-            input: '.',          // Input directory
-            includes: '_includes', // Includes directory
-            data: '_data',       // Data directory
-            output: '_site',     // Output directory
+            input: '.',
+            includes: '_includes',
+            data: '_data',
+            output: '_site',
         },
     };
 };

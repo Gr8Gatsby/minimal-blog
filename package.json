@@ -5,6 +5,7 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
+    "build:prod": "ELEVENTY_ENV=production npx @11ty/eleventy",
     "deploy": "npx @11ty/eleventy && git add . && git commit -m 'Deploy to GitHub Pages' && git push origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
