@@ -7,16 +7,15 @@ body {
 
 /* Header styling */
 header {
-    background-image: url('/assets/images/banner.jpg');
     background-size: cover;
     background-position: center;
-    height: 150px; /* Adjust height */
+    height: 150px;
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    text-align: center; /* Center text */
-    color: white; /* Text color for contrast */
-    padding: 10px; /* Padding for header */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
 
 /* Navigation styling */

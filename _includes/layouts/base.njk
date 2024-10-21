@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/styles.css" />
+    <style>
+        :root {
+            --base-url: '{{ baseUrl }}';
+        }
+    </style>
 </head>
 <body>
     {% include 'header.njk' %}
