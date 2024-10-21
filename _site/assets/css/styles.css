@@ -7,9 +7,18 @@ body {
 }
 
 header {
-    background-color: #3a8eeb; /* Vibrant blue header */
-    color: white; /* White text on header */
-    padding: 15px 20px; /* Spacing */
+    background-image: url('/assets/images/banner.jpg'); /* Use the path for the banner image */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the image */
+    height: 300px; /* Set a height for the header */
+    color: white; /* Text color */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+h1, p {
+    margin: 0; /* Reset default margins */
 }
 
 nav ul {
