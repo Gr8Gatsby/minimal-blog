@@ -8,6 +8,11 @@ module.exports = function(eleventyConfig) {
     // Add global data for base URL
     eleventyConfig.addGlobalData('baseUrl', baseUrl);
 
+    // Add a collection for posts
+    eleventyConfig.addCollection("post", function(collection) {
+        return collection.getFilteredByGlob("posts/*.md");
+    });
+
     return {
         dir: {
             input: '.',
