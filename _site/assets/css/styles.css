@@ -1,4 +1,62 @@
 body {
-    background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text for readability */
+}
+
+header {
+    background-color: #3a8eeb; /* Vibrant blue header */
+    color: white; /* White text on header */
+    padding: 15px 20px; /* Spacing */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between links */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    padding: 20px; /* Add padding for main content */
+    max-width: 800px; /* Limit width for better readability */
+    margin: auto; /* Center content */
+    background: white; /* White background for main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    color: #3a8eeb; /* Header color matching nav */
+}
+
+footer {
+    background-color: #3a8eeb; /* Footer same color as header */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 15px 20px; /* Spacing */
+    position: relative; /* Allow for footer to stay at the bottom */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Space above footer */
+}
+
+p {
+    line-height: 1.6; /* Improve readability with line height */
 }

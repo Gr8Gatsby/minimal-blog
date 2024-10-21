@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}" />
 </head>
 <body>
+  {% include 'header.njk' %}
   <main>
     {{ content | safe }}
   </main>
+  {% include 'footer.njk' %}
 </body>
 </html>
