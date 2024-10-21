@@ -1,4 +1,64 @@
+/* General body styling */
 body {
-    background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Modern font */
+    color: #333; /* Dark text for readability */
+}
+
+/* Header styling */
+header {
+    background-image: url('/assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 150px; /* Adjust height */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    color: white; /* Text color for contrast */
+    padding: 10px; /* Padding for header */
+}
+
+/* Navigation styling */
+nav {
+    display: flex; /* Flex container for horizontal layout */
+    justify-content: center; /* Center the links */
+    gap: 30px; /* Space between links */
+    list-style: none; /* Remove list-style */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    color: #f0f0f0; /* Slightly lighter text color on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 20px; /* Padding for main content */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark gray for the footer */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Vertical padding */
+    margin-top: 20px; /* Space above footer */
+    position: relative; /* Ensure footer does not overlap with content */
+}
+
+/* Additional footer styling */
+footer p {
+    margin: 0; /* Reset footer paragraph margin */
 }
