@@ -23,7 +23,7 @@ jobs:
       - name: Build the project
         env:
           ELEVENTY_ENV: production
-        run: npx @11ty/eleventy
+        run: ELEVENTY_ENV=production npx @11ty/eleventy
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
