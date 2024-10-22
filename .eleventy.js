@@ -8,6 +8,13 @@ module.exports = function(eleventyConfig) {
     // Add global data for base URL
     eleventyConfig.addGlobalData('baseUrl', baseUrl);
 
+
+    // Add a custom filter to trim leading slashes
+    eleventyConfig.addFilter("trimSlash", function(value) {
+        return value.replace(/^\/+/, ""); // Remove leading slashes
+    });
+
+
     // Add a collection for posts
     eleventyConfig.addCollection("post", function(collection) {
         return collection.getFilteredByGlob("posts/*.md");
