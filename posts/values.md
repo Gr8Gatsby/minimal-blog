@@ -1,6 +1,6 @@
 ---
-title: Values
-description: Self-awareness and personal values are fundamental to success
+title: "The Heart of Leadership: Cultivating Self-Awareness and Team Values"
+description: "Explore how cultivating self-awareness and understanding core values can enhance leadership effectiveness and team dynamics. Discover actionable insights to align individual and collective goals, fostering a cohesive and motivated team environment."
 date: 2024-09-15
 layout: layouts/blogpost.njk
 ---
