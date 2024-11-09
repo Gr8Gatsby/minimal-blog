@@ -18,28 +18,29 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background-color: #f0f4f8; /* Soft, light blue background */
+            background-color: #e3e8ee; /* Soft, calm blue-gray background */
             transition: background-color 0.3s, color 0.3s;
         }
 
-        /* Header styling with image overlay */
+        /* Parallax header styling */
         .header {
             position: relative;
-            height: 300px;
-            background: linear-gradient(135deg, rgba(72, 160, 220, 0.7), rgba(123, 67, 151, 0.7)), url("/assets/images/values_header.webp") center/cover;
+            height: 400px;
+            background: linear-gradient(135deg, rgba(60, 120, 200, 0.6), rgba(20, 20, 50, 0.7)), url("/assets/images/values_banner.png") center/cover;
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
+            align-items: flex-end;
+            color: #ffffff;
+            overflow: hidden;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
         }
 
         .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 2.2em;
+            margin: 20px 0;
             font-family: 'Helvetica Neue', sans-serif;
+            text-align: center;
         }
 
         .back-button {
@@ -56,13 +57,13 @@
         main {
             flex: 1;
             padding: 40px 20px;
-            max-width: 800px;
+            max-width: 700px;
             margin: auto;
             line-height: 1.7;
             font-size: 1.1em;
             color: #333;
             background: #ffffff;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s, color 0.3s;
         }
@@ -74,14 +75,14 @@
 
         /* Link styling */
         a {
-            color: #48a0dc; /* Calming blue for links */
+            color: #3c78c8; /* Subtle blue for links */
             text-decoration: underline;
             transition: color 0.3s;
         }
 
         /* Footer styling */
         footer {
-            background-color: #f0f4f8;
+            background-color: #e3e8ee;
             color: #666;
             text-align: center;
             padding: 20px 0;
@@ -91,24 +92,32 @@
 
         /* Dark theme styles */
         .dark-theme {
-            background-color: #1f1f1f;
-            color: #d3d3d3;
+            background-color: #2a2a2a;
+            color: #d0d0d0;
         }
         
         .dark-theme main {
-            background-color: #2e2e2e;
-            color: #d3d3d3;
+            background-color: #3b3b3b;
+            color: #d0d0d0;
         }
 
         .dark-theme a {
-            color: #9fc4ff;
+            color: #9dbbf8; /* Light blue for dark mode links */
         }
     </style>
 </head>
 <body>
-    <!-- Header Section with Image Overlay -->
+    <!-- Parallax Header Section with Overlay -->
     <header class="header">
         <a href="/blog.html" class="back-button">← Back to Blog</a>
+        <div class="controls">
+            <div class="dropdown">
+                <select id="bgColorSelector" class="theme-option">
+                    <option value="light" selected>Light Theme</option>
+                    <option value="dark">Dark Theme</option>
+                </select>
+            </div>
+        </div>
         <h1>The Heart of Leadership: Cultivating Self-Awareness and Team Values</h1>
     </header>
 
@@ -123,9 +132,11 @@
     </main>
 
     <!-- Footer Section -->
+    
     <footer>
     <p>No rights reserved since 2024</p>
 </footer>
+    
 
     <script>
         // Theme Control
