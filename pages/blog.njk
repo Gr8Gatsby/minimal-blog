@@ -1,16 +1,23 @@
 ---
 title: Blog
-layout: layouts/blog.njk
+layout: layouts/blog_layout.njk
 permalink: blog.html
 ---
 
 <h1>{{ title }}</h1>
 
-<ul>
-{% for post in collections.post %}
-    <li>
-        <a href="{{ baseUrl }}{{ post.url | trimSlash }}">{{ post.data.title }}</a>
-        <p>{{ post.data.description }}</p>
-    </li>
-{% endfor %}
+<ul class="blog-list">
+    {% for post in collections.post %}
+        <li class="blog-post">
+            <div class="post-icon">
+                {% if post.data.headerImage %}
+                    <img src="{{ baseUrl }}{{ post.data.headerImage }}" alt="{{ post.data.title }}" class="post-image">
+                {% endif %}
+            </div>
+            <div class="post-content">
+                <a href="{{ baseUrl }}{{ post.url | trimSlash }}" class="post-title">{{ post.data.title }}</a>
+                <p class="post-description">{{ post.data.description }}</p>
+            </div>
+        </li>
+    {% endfor %}
 </ul>

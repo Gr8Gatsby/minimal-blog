@@ -15,20 +15,6 @@
             min-height: 100vh; /* Full height */
         }
 
-        /* Header styling */
-        header {
-            background-image: url('/assets/images/banner.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 150px; /* Adjust height */
-            display: flex;
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
-            text-align: center; /* Center text */
-            color: white; /* Text color for contrast */
-            padding: 10px; /* Padding for header */
-        }
-
         /* Main content styling */
         main {
             flex: 1; /* Allows the main content to grow and fill the space */
@@ -65,6 +51,54 @@
 
         li a:hover {
             color: #007BFF; /* Change color on hover */
+        }
+
+        /* Blog list styling */
+        .blog-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .blog-post {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .post-icon {
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+
+        .post-image {
+            width: 80px; /* Small, icon-sized width */
+            height: 80px; /* Small, icon-sized height */
+            border-radius: 8px; /* Rounded corners for a polished look */
+            object-fit: cover; /* Crop the image to fit the icon size */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .post-content {
+            flex: 1; /* Ensures the text takes the remaining space */
+        }
+
+        .post-title {
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .post-title:hover {
+            color: #007BFF;
+        }
+
+        .post-description {
+            color: #555;
+            margin-top: 5px;
         }
     </style>
 </head>

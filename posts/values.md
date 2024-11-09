@@ -3,7 +3,7 @@ title: "The Heart of Leadership: Cultivating Self-Awareness and Team Values"
 description: "Explore how cultivating self-awareness and understanding core values can enhance leadership effectiveness and team dynamics. Discover actionable insights to align individual and collective goals, fostering a cohesive and motivated team environment."
 date: 2024-09-15
 layout: layouts/blogpost-modern.njk
-headerImage: 'values_banner.png'
+headerImage: 'assets/images/values_banner.png'
 ---
 
 Focusing on self-awareness and individual values is a powerful tool for leaders and their teams when building a cohesive unit. In the hustle of daily work—juggling online meetings, instant messages, and overflowing task lists—we can easily lose sight of our core values and what truly matters.

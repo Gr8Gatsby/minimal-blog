@@ -15,20 +15,6 @@
             min-height: 100vh; /* Full height */
         }
 
-        /* Header styling */
-        header {
-            background-image: url('/assets/images/banner.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 150px; /* Adjust height */
-            display: flex;
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
-            text-align: center; /* Center text */
-            color: white; /* Text color for contrast */
-            padding: 10px; /* Padding for header */
-        }
-
         /* Main content styling */
         main {
             flex: 1; /* Allows the main content to grow and fill the space */
@@ -66,6 +52,54 @@
         li a:hover {
             color: #007BFF; /* Change color on hover */
         }
+
+        /* Blog list styling */
+        .blog-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .blog-post {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .post-icon {
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+
+        .post-image {
+            width: 80px; /* Small, icon-sized width */
+            height: 80px; /* Small, icon-sized height */
+            border-radius: 8px; /* Rounded corners for a polished look */
+            object-fit: cover; /* Crop the image to fit the icon size */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .post-content {
+            flex: 1; /* Ensures the text takes the remaining space */
+        }
+
+        .post-title {
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .post-title:hover {
+            color: #007BFF;
+        }
+
+        .post-description {
+            color: #555;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -81,18 +115,42 @@
         
 <h1>Blog</h1>
 
-<ul>
-
-    <li>
-        <a href="/posts/values/">The Heart of Leadership: Cultivating Self-Awareness and Team Values</a>
-        <p>Explore how cultivating self-awareness and understanding core values can enhance leadership effectiveness and team dynamics. Discover actionable insights to align individual and collective goals, fostering a cohesive and motivated team environment.</p>
-    </li>
-
-    <li>
-        <a href="/posts/welcome/">My First Post</a>
-        <p>This is a description of my first post.</p>
-    </li>
-
+<ul class="blog-list">
+    
+        <li class="blog-post">
+            <div class="post-icon">
+                
+                    <img src="/assets/images/values_banner.png" alt="The Heart of Leadership: Cultivating Self-Awareness and Team Values" class="post-image">
+                
+            </div>
+            <div class="post-content">
+                <a href="/posts/values/" class="post-title">The Heart of Leadership: Cultivating Self-Awareness and Team Values</a>
+                <p class="post-description">Explore how cultivating self-awareness and understanding core values can enhance leadership effectiveness and team dynamics. Discover actionable insights to align individual and collective goals, fostering a cohesive and motivated team environment.</p>
+            </div>
+        </li>
+    
+        <li class="blog-post">
+            <div class="post-icon">
+                
+                    <img src="//path/to/your/image.png  &lt;!-- Update with the path to the header image --&gt;" alt="Yet Another Post on AI (YAPA)" class="post-image">
+                
+            </div>
+            <div class="post-content">
+                <a href="/posts/fun with ai/" class="post-title">Yet Another Post on AI (YAPA)</a>
+                <p class="post-description">This post will be the first about how I use Artificial Intelligence (AI) for many common tasks.</p>
+            </div>
+        </li>
+    
+        <li class="blog-post">
+            <div class="post-icon">
+                
+            </div>
+            <div class="post-content">
+                <a href="/posts/welcome/" class="post-title">My First Post</a>
+                <p class="post-description">This is a description of my first post.</p>
+            </div>
+        </li>
+    
 </ul>
     </main>
     <footer>
