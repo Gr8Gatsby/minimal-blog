@@ -5,165 +5,145 @@
     <title>My First Post</title>
     <link rel="stylesheet" href="/minimal-blog/assets/css/styles.css">
     <style>
-        /* General body styling */
-        body {
+        /* Reset and basic styling */
+        * {
+            box-sizing: border-box;
             margin: 0;
-            font-family: 'Georgia', serif; /* Serif font for readability */
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Full height */
+            min-height: 100vh;
+            background-color: #e3e8ee; /* Soft, calm blue-gray background */
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        /* Header styling */
+        /* Parallax header styling */
         .header {
-            background-color: #333; /* Dark gray background for header */
-            color: white; /* Text color */
-            padding: 5px 15px; /* Reduced padding for a thinner header */
-            display: flex; /* Flexbox for alignment */
-            justify-content: space-between; /* Space between elements */
-            align-items: center; /* Align items vertically center */
-            height: 30px; /* Set a fixed height for a thinner header */
+            position: relative;
+            height: 400px;
+            background: linear-gradient(135deg, rgba(60, 120, 200, 0.6), rgba(20, 20, 50, 0.7)), url("/minimal-blog/") center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: #ffffff;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
         }
 
-        /* Back button styling */
+        .header h1 {
+            font-size: 2.2em;
+            margin: 20px 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+
         .back-button {
-            color: white; /* Text color */
-            text-decoration: none; /* Remove underline */
-            font-weight: bold; /* Make text bold */
-            font-size: 14px; /* Font size */
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
         }
 
         /* Main content styling */
         main {
-            flex: 1; /* Allows the main content to grow and fill the space */
-            padding: 20px; /* Padding for main content */
-            margin: 0; /* Remove margin to eliminate extra white space */
-            background-color: #f2e1d0; /* Default parchment color */
-            transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #333;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Link styling */
+        a {
+            color: #3c78c8; /* Subtle blue for links */
+            text-decoration: underline;
+            transition: color 0.3s;
         }
 
         /* Footer styling */
         footer {
-            background-color: #333; /* Dark gray for the footer */
-            color: white; /* Text color */
-            text-align: center; /* Center text */
-            padding: 10px 0; /* Vertical padding */
-            margin-top: 0; /* No margin above footer */
+            background-color: #e3e8ee;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
         }
 
-        /* Blog post content styling */
-        h1 {
-            font-size: 2em; /* Larger title font size */
-            margin-bottom: 10px; /* Space below title */
+        /* Dark theme styles */
+        .dark-theme {
+            background-color: #2a2a2a;
+            color: #d0d0d0;
+        }
+        
+        .dark-theme main {
+            background-color: #3b3b3b;
+            color: #d0d0d0;
         }
 
-        p {
-            line-height: 1.6; /* Increase line height for better readability */
-            margin-bottom: 1em; /* Space between paragraphs */
+        .dark-theme a {
+            color: #9dbbf8; /* Light blue for dark mode links */
         }
-
-        /* Controls container */
-        .controls {
-            display: flex; /* Flexbox for controls */
-            align-items: center; /* Align items vertically center */
-            margin-left: 20px; /* Margin from the left for spacing */
-        }
-
-        /* Font size classes */
-        .blog-post {
-            font-size: 1.5em; /* Default medium size */
-        }
-        .blog-post.small {
-            font-size: 1em; /* Small size */
-        }
-        .blog-post.large {
-            font-size: 1.75em; /* Large size */
-        }
-
-        /* Font size option styling */
-        .font-size-option {
-            margin-right: 10px; /* Space between options */
-            font-weight: bold; /* Make the 'A's bold for better visibility */
-            cursor: pointer; /* Pointer cursor on hover */
-        }
-
-        /* Highlighting the selected size */
-        .selected {
-            color: #007BFF; /* Color for the selected font size */
-            text-decoration: underline; /* Underline for emphasis */
-        }
-
     </style>
 </head>
 <body>
+    <!-- Parallax Header Section with Overlay -->
     <header class="header">
         <a href="/minimal-blog/blog.html" class="back-button">← Back to Blog</a>
         <div class="controls">
-            <div class="font-size-control">
-                <span class="font-size-option" data-size="small" style="font-size: 1em;">A</span>
-                <span class="font-size-option" data-size="medium" style="font-size: 1.5em;">A</span>
-                <span class="font-size-option" data-size="large" style="font-size: 1.75em;">A</span>
-            </div>
             <div class="dropdown">
-                <select id="bgColorSelector">
-                    <option value="off-white">Background: Off-White</option>
-                    <option value="parchment" selected>Background: Parchment</option>
-                    <option value="black">Background: Black</option>
+                <select id="bgColorSelector" class="theme-option">
+                    <option value="light" selected>Light Theme</option>
+                    <option value="dark">Dark Theme</option>
                 </select>
             </div>
         </div>
-    </header>
-    <main>
         <h1>My First Post</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
         <article class="blog-post"><p>This is the content of my first blog post.</p>
 </article>
     </main>
 
+    <!-- Footer Section -->
+    
     <footer>
-        <footer>
     <p>No rights reserved since 2024</p>
 </footer>
-    </footer>
+    
 
     <script>
-        const fontSizeOptions = document.querySelectorAll('.font-size-option');
-        const blogPost = document.querySelector('.blog-post');
+        // Theme Control
         const bgColorSelector = document.getElementById('bgColorSelector');
-        const main = document.querySelector('main'); // Select the main element
+        const body = document.body;
 
-        // Apply initial font size (default to medium)
-        blogPost.classList.add('medium'); 
-        fontSizeOptions[1].classList.add('selected'); // Highlight medium as the default selected option
-
-        // Font size event listeners
-        fontSizeOptions.forEach(option => {
-            option.addEventListener('click', function() {
-                // Remove previous font size classes and selected class
-                blogPost.classList.remove('small', 'medium', 'large');
-                fontSizeOptions.forEach(opt => opt.classList.remove('selected'));
-
-                // Add the new font size class and highlight the selected option
-                blogPost.classList.add(this.getAttribute('data-size'));
-                this.classList.add('selected');
-            });
-        });
-
-        // Background color change event listener
         bgColorSelector.addEventListener('change', function() {
-            // Change the background color of the main element
-            switch (this.value) {
-                case 'off-white':
-                    main.style.backgroundColor = '#f8f8f8'; // Off-White
-                    main.style.color = '#333'; // Dark text
-                    break;
-                case 'parchment':
-                    main.style.backgroundColor = '#f2e1d0'; // Parchment
-                    main.style.color = 'black'; // Dark text
-                    break;
-                case 'black':
-                    main.style.backgroundColor = '#222'; // Black
-                    main.style.color = '#f8f8f8'; // Off-white text
-                    break;
+            if (this.value === 'dark') {
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.remove('dark-theme');
             }
         });
     </script>
