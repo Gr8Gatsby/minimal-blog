@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/styles.css">
+    <style>
+        /* Reset and basic styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f4f8; /* Soft, light blue background */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Header styling with image overlay */
+        .header {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(72, 160, 220, 0.7), rgba(123, 67, 151, 0.7)), url("{{ baseUrl }}assets/images/{{ headerImage }}") center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Main content styling */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #333;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Link styling */
+        a {
+            color: #48a0dc; /* Calming blue for links */
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #f0f4f8;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Dark theme styles */
+        .dark-theme {
+            background-color: #1f1f1f;
+            color: #d3d3d3;
+        }
+        
+        .dark-theme main {
+            background-color: #2e2e2e;
+            color: #d3d3d3;
+        }
+
+        .dark-theme a {
+            color: #9fc4ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Image Overlay -->
+    <header class="header">
+        <a href="{{ baseUrl }}blog.html" class="back-button">← Back to Blog</a>
+        <h1>{{ title }}</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <article class="blog-post">{{ content | safe }}</article>
+    </main>
+
+    <!-- Footer Section -->
+    {% include 'footer.njk' %}
+
+    <script>
+        // Theme Control
+        const bgColorSelector = document.getElementById('bgColorSelector');
+        const body = document.body;
+
+        bgColorSelector.addEventListener('change', function() {
+            if (this.value === 'dark') {
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.remove('dark-theme');
+            }
+        });
+    </script>
+</body>
+</html>
