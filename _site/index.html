@@ -8,6 +8,53 @@
         :root {
             --base-url: '/';
         }
+         /* General body styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif; /* Modern font */
+            color: #333; /* Dark text for readability */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full height */
+        }
+
+        /* Main content styling */
+        main {
+            flex: 1; /* Allows the main content to grow and fill the space */
+            padding: 20px; /* Padding for main content */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333; /* Dark gray for the footer */
+            color: white; /* Text color */
+            text-align: center; /* Center text */
+            padding: 10px 0; /* Vertical padding */
+            margin-top: 20px; /* Space above footer */
+        }
+
+        /* Blog list styling */
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+
+        li {
+            margin-bottom: 20px; /* Space between entries */
+            border-bottom: 1px solid #ccc; /* Light gray border for separation */
+            padding: 10px 0; /* Vertical padding */
+        }
+
+        li a {
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make the title bold */
+            color: #333; /* Link color */
+        }
+
+        li a:hover {
+            color: #007BFF; /* Change color on hover */
+        }
     </style>
 </head>
 <body>
@@ -21,8 +68,9 @@
 </header>
     <main>
         
-<p>This is a test homepage.</p>
-<p>No rights reserved since 2024.</p>
+<h1>Hello, and welcome to my website!</h1>
+
+Hi, it is nice to meet you. This is a place where I am sharing thoughts and ideas. As content builds there will be more reason to come here, for now this site is pretty static and mainly capturing some blog topics.
     </main>
     <footer>
     <p>No rights reserved since 2024</p>
