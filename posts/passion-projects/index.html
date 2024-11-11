@@ -3,30 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Reclaiming my Passion Projects Through AI</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/minimal-blog/assets/css/styles.css">
+    <link rel="stylesheet" href="/minimal-blog/assets/css/blogpost.css">
     <style>
-        /* Reset and basic styling */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #e3e8ee; /* Soft, calm blue-gray background */
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        /* Parallax header styling */
         .header {
             position: relative;
             height: 400px;
-            background: linear-gradient(135deg, rgba(60, 120, 200, 0.6), rgba(20, 20, 50, 0.7)), url("/assets/images/reclaiming-passion-projects.png") center/cover;
+            background: linear-gradient(135deg, rgba(60, 120, 200, 0.6), rgba(20, 20, 50, 0.7)),
+            url("/minimal-blog/assets/images/passion-projects.png") center/cover;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -35,81 +19,12 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s;
         }
-
-        .header h1 {
-            font-size: 2.2em;
-            margin: 20px 0;
-            font-family: 'Helvetica Neue', sans-serif;
-            text-align: center;
-        }
-
-        .back-button {
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        /* Main content styling */
-        main {
-            flex: 1;
-            padding: 40px 20px;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.7;
-            font-size: 1.1em;
-            color: #333;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        p {
-            margin-bottom: 1.5em;
-            font-family: 'Georgia', serif;
-        }
-
-        /* Link styling */
-        a {
-            color: #3c78c8; /* Subtle blue for links */
-            text-decoration: underline;
-            transition: color 0.3s;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #e3e8ee;
-            color: #666;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9em;
-            border-top: 1px solid #ddd;
-        }
-
-        /* Dark theme styles */
-        .dark-theme {
-            background-color: #2a2a2a;
-            color: #d0d0d0;
-        }
-        
-        .dark-theme main {
-            background-color: #3b3b3b;
-            color: #d0d0d0;
-        }
-
-        .dark-theme a {
-            color: #9dbbf8; /* Light blue for dark mode links */
-        }
     </style>
 </head>
 <body>
     <!-- Parallax Header Section with Overlay -->
     <header class="header">
-        <a href="/blog.html" class="back-button">← Back to Blog</a>
+        <a href="/minimal-blog/blog.html" class="back-button">← Back to Blog</a>
         <div class="controls">
             <div class="dropdown">
                 <select id="bgColorSelector" class="theme-option">
@@ -124,21 +39,43 @@
     <!-- Main Content Section -->
     <main>
         <article class="blog-post"><h1>Introduction</h1>
-<p>As I’ve moved up in my career, balancing my passion for building with my day-to-day responsibilities has become increasingly challenging. I spend most of my time on strategy, ensuring my team understands why we’re here and what we need to achieve. This shift has meant that the hands-on technical work, the kind that first drew me to this field, often takes a backseat. Managing the “why” and the “what” is fulfilling in its own way, but it’s distinctly different from the process of actually building something from scratch. Over time, I had come to accept that my personal passion projects and proof-of-concepts might just have to wait while I focused on work-life balance.</p>
-<p>But then, Generative AI came along and changed everything.</p>
-<p>With the rise of tools like ChatGPT, the time required to go from idea to working prototype has dropped dramatically. I find myself able to create complex, interactive applications quickly, often without writing a single line of code. It’s as if I’ve gained a whole new teammate—one who understands my vision, executes on my high-level requirements, and allows me to leverage my strengths as a VP accustomed to defining the big picture.</p>
-<p>In this new world, I can be a Product Manager and visionary without sacrificing the joy of building. Instead of spending hours learning new frameworks or struggling with design details, I can guide AI through the process, focusing on what I do best: defining the why and the what. And I get to see my projects come to life in a way that feels both thrilling and deeply satisfying. It’s a wonderful world where my skills, honed over years of strategic thinking, can finally meet my passion for hands-on creation.</p>
-<h1>Generative AI Saves Time and Bridges Multiple Skills</h1>
+<p>Advancing in a career often means that balancing a passion for building with strategic responsibilities becomes challenging. Time shifts toward defining the “why” and the “what” for the team, leaving less room for the hands-on work that initially sparked interest in the field. Personal projects and proof-of-concepts may have to wait, all in the name of maintaining a healthy work-life balance.</p>
+<p>Then, Generative AI tools like ChatGPT arrived and transformed the process.</p>
+<p>With this new technology, ideas can rapidly evolve into working prototypes, often without extensive coding. It’s like gaining a teammate who understands the vision and brings it to life, enabling a focus on the big picture while preserving the joy of creation. This shift makes it possible to lead strategically and build meaningfully—combining long-developed strengths in vision with the original passion for hands-on work.</p>
+<h1>My Passion Project</h1>
+<p>Traveling together has always been a shared passion between my wife and myself, especially when it comes to finding exceptional hotels that offer something truly special. We’re both drawn to unique, well-designed places, so planning our stays involves a lot of research. To keep everything organized, we developed a spreadsheet that allows us to track all the details. Since we often work on it at different times, the spreadsheet helps us consolidate our findings, even when one of us has information the other hasn’t seen yet.</p>
+<p>Visualizing the entire itinerary in one place is useful when sharing with other people, especially for a clear, big-picture view. This sparked the idea of transforming the spreadsheet into something more interactive—a map that could bring our plans to life. Google Maps offers custom mapping options, but creating a map for each itinerary is time-intensive and only provides location visuals. With a [prompt] creating a rich interactive experience was joyful and easy!</p>
+<div class="image-row">
+  <div class="image-container">
+    <div class="image-caption">How it started</div>
+	<a href="/assets/images/passion-projects/travel-options-sheet.png" target="_blank">
+      <img src="/assets/images/passion-projects/travel-options-sheet.png" alt="Google Spreadsheet with travel itinerary options for a trip to Hawaii" class="preview-image">
+    </a>
+  </div>
+  <div class="image-container">
+    <div class="image-caption">How it's going</div>
+	<a href="/assets/images/passion-projects/travel-itinerary.png" target="_blank">
+      <img src="/assets/images/passion-projects/travel-itinerary.png" alt="Travel Itinerary Image Web Page" class="preview-image">
+    </a>
+  </div>
+</div>
+<p>Turning to ChatGPT for help made it possible to convert the spreadsheet into a dynamic travel itinerary web page, combining both functionality and visual appeal. With just a few <a href="/posts/subposts/passion-projects-prompt/">prompts</a>, the spreadsheet evolved into an interactive tool that brings travel plans to life on a map. The prompt used to build the page, though simplified from a longer conversation, captures the intended outcome. Even on its own, it delivers a result that aligns with the vision behind the planning process, transforming a simple spreadsheet into an engaging map that enhances the travel experience.</p>
+<div class="image-row">
+  <a href="/assets/images/passion-projects/consistency.png" target="_blank" class="image-container">
+    <img src="/assets/images/passion-projects/consistency.png" alt="Google Spreadsheet with travel itinerary options for a trip to Hawaii" class="preview-image">
+  </a>
+</div>
+<h1>Gen AI adds to my Skills</h1>
 <p>Creating a functional, polished web application typically involves a lot of people and a lot of time. In my recent project, building a travel itinerary visualizer with ChatGPT, I discovered how dramatically AI could reduce that burden—acting as a developer, designer, architect, and even a sounding board, all in one.</p>
 <p>In a traditional setup, building this app would have meant multiple specialists and weeks of work. As a Product Manager, I would start by defining the requirements and working closely with a frontend developer to build the interactive components, like the map and calendar. I’d need a UI designer to make it visually appealing, a software architect to handle the structural foundation, and plenty of coordination to ensure all these pieces came together seamlessly.</p>
 <p>Each role would come with both time and financial costs. Developers would need days or weeks to code the map and calendar, integrate libraries, and ensure a smooth user experience. A designer would create the layouts, color schemes, and typography, ensuring the app looked clean and professional. And finally, I’d be there throughout, constantly aligning the team with the project’s “why” and “what” and offering feedback along the way.</p>
 <p>Using tools like Tableau or Power BI might have handled parts of this process, but with limitations. Visualization tools could create static maps or dashboards, but they don’t offer the flexibility to build fully interactive, user-friendly web apps without extensive customization. Even no-code platforms like Webflow or Bubble would struggle to handle custom features, such as the dynamic, color-coded calendar linked to map markers. And if I relied solely on these tools, I’d still need a developer to piece it all together into something cohesive.</p>
 <h1>How ChatGPT's Brought the Skills of a Full Development Team</h1>
 <p>Enter ChatGPT, and everything changes. Instead of working with a whole team, I found myself working with a single AI assistant that could understand and execute on my high-level requirements. Here’s how it tackled each role:
-•	Developer: ChatGPT took care of all the coding, using Leaflet.js to create an interactive map with color-coded markers and labels. It built the calendar dynamically based on my data, linking it to the map and adding tooltips and stop numbers—all based on simple requests like “add a marker” or “use color coding.”
-•	UI Designer: With my instructions to “use a modern font” or “add subtle shadows,” ChatGPT crafted a clean, professional design that required no further touch-ups. What might have been days of design iterations became a matter of minutes, with every visual change handled directly in HTML and CSS.
-•	Architect: ChatGPT structured the code logically, integrating JavaScript, HTML, and CSS smoothly and modularly. I didn’t have to worry about choosing libraries or setting up frameworks; ChatGPT took care of everything under the hood, leaving me to focus on the end result.
-•	Sounding Board: Surprisingly, ChatGPT also served as a collaborative partner, offering suggestions that shaped the final product. With questions like “How can I make the calendar more user-friendly?” I received suggestions that would typically come from brainstorming sessions with a team.</p>
+• Developer: ChatGPT took care of all the coding, using Leaflet.js to create an interactive map with color-coded markers and labels. It built the calendar dynamically based on my data, linking it to the map and adding tooltips and stop numbers—all based on simple requests like “add a marker” or “use color coding.”
+• UI Designer: With my instructions to “use a modern font” or “add subtle shadows,” ChatGPT crafted a clean, professional design that required no further touch-ups. What might have been days of design iterations became a matter of minutes, with every visual change handled directly in HTML and CSS.
+• Architect: ChatGPT structured the code logically, integrating JavaScript, HTML, and CSS smoothly and modularly. I didn’t have to worry about choosing libraries or setting up frameworks; ChatGPT took care of everything under the hood, leaving me to focus on the end result.
+• Sounding Board: Surprisingly, ChatGPT also served as a collaborative partner, offering suggestions that shaped the final product. With questions like “How can I make the calendar more user-friendly?” I received suggestions that would typically come from brainstorming sessions with a team.</p>
 <p>This collaborative experience took less than a day from start to finish. Instead of managing multiple handoffs or wrangling tools that only do part of the job, I iterated directly with ChatGPT. A few hours of prompting and feedback replaced what could have been weeks of traditional development time.</p>
 <h1>How Generative AI is Helping Me Reclaim My Passion Projects</h1>
 <p>As I’ve moved into more senior roles, my time to build things has gradually faded. Day-to-day, I’m focused on strategy, aligning my team with our goals, and ensuring everyone understands the why and the what behind our work. It’s meaningful, but it leaves little room for the hands-on building that once fueled my career. And when I did find a moment to start a passion project—something experimental or just for fun—it often felt like a lost cause. I’d get partway in, realize I’d need skills I hadn’t practiced in years, or hit a wall with design polish, and the project would stall.</p>
@@ -152,11 +89,9 @@
     </main>
 
     <!-- Footer Section -->
-    
     <footer>
     <p>No rights reserved since 2024</p>
 </footer>
-    
 
     <script>
         // Theme Control
