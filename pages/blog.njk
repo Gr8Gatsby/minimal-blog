@@ -17,6 +17,14 @@ permalink: blog.html
             <div class="post-content">
                 <a href="{{ baseUrl }}{{ post.url | trimSlash }}" class="post-title">{{ post.data.title }}</a>
                 <p class="post-description">{{ post.data.description }}</p>
+
+                {% if post.data.related %}
+                    <ul class="sub-articles">
+                        {% for subpost in post.data.related %}
+                            <li><a href="{{ baseUrl }}{{ subpost.url }}">{{ subpost.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </div>
         </li>
     {% endfor %}
