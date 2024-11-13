@@ -4,6 +4,8 @@ description: "Generative AI has brought my passion projects back to life. As a V
 date: 2024-10-21
 layout: layouts/blogpost-modern.njk
 headerImage: assets/images/passion-projects.png
+headerImagePosition: "bottom"
+headerImageHeight: "200px"
 ---
 
 # Introduction
