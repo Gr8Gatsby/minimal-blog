@@ -56,9 +56,9 @@ While tools like Tableau or Power BI could handle parts of the visualization, th
 
 AI offers a new way forward, allowing anyone to take on complex projects that once required specialized teams. With AI as a collaborator, creating sophisticated applications becomes accessible, transforming ideas into polished, functional products more quickly and efficiently than ever before.
 
-# What roles did AI play?
+# What role did AI play?
 
-With ChatGPT, everything changes. Instead of working with a team, an AI assistant handled high-level requirements and executed across multiple roles:
+With AI, everything changes. Instead of working on my own there is a virtual team, an AI assistant handled high-level requirements and executed across multiple roles:
 
 ### Developer 👩🏻‍💻
 ChatGPT handled all coding, using Leaflet.js to create an interactive map with color-coded markers, labels, and tooltips. The calendar was dynamically generated from data, linked to the map, and included stop numbers—all through simple requests like “add a marker” or “apply color coding.”
@@ -80,3 +80,6 @@ Generative AI has opened a new chapter for what can be accomplished by a single 
 
 This journey marks the beginning of leveraging AI not only to bring personal projects to life but also to create more time and space to pursue high-level outcomes. AI enables more to be achieved with less effort and energy, setting a new standard for personal productivity and innovation. The possibilities are vast, and this is just the start.
 
+# Call to Action
+
+Ready to explore what AI can do for your own projects? Start by identifying a passion project or idea you’ve been putting off, and experiment with generative AI tools like ChatGPT to bring it to life. Whether you’re a designer, coder, or strategist, AI can help you bridge skill gaps and turn high-level concepts into real results. Dive in, start creating, and see how AI can transform your productivity and creativity!
