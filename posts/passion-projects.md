@@ -25,15 +25,15 @@ Visualizing the entire itinerary in one place is useful when sharing with other 
 <div class="image-row">
   <div class="image-container">
     <div class="image-caption">How it started</div>
-	<a href="/assets/images/passion-projects/travel-options-sheet.png" target="_blank">
-      <img src="/assets/images/passion-projects/travel-options-sheet.png" alt="Google Spreadsheet with travel itinerary options for a trip to Hawaii" class="preview-image">
+	<a href="{{ baseUrl }}assets/images/passion-projects/travel-options-sheet.png" target="_blank">
+      <img src="{{ baseUrl }}assets/images/passion-projects/travel-options-sheet.png" alt="Google Spreadsheet with travel itinerary options for a trip to Hawaii" class="preview-image">
     </a>
   </div>
   
   <div class="image-container">
     <div class="image-caption">How it's going</div>
-	<a href="/assets/images/passion-projects/travel-itinerary.png" target="_blank">
-      <img src="/assets/images/passion-projects/travel-itinerary.png" alt="Travel Itinerary Image Web Page" class="preview-image">
+	<a href="{{ baseUrl }}assets/images/passion-projects/travel-itinerary.png" target="_blank">
+      <img src="{{ baseUrl }}assets/images/passion-projects/travel-itinerary.png" alt="Travel Itinerary Image Web Page" class="preview-image">
     </a>
   </div>
 </div>
@@ -43,8 +43,8 @@ Turning to ChatGPT for help made it possible to convert the spreadsheet into a d
 At the end of the prompting session after retrying with a summary of all of my [prompts](/posts/subposts/passion-projects-prompt/) the LLM did produce a similar result. This is an area where LLMs will still have some challenges, and many companies are working on miniminzing the "hallucinations" that occur. However this output is still useful and the time to produce this was essentially one screenshot of a spreadsheet and one prompt!
 
 <div class="image-row">
-  <a href="/assets/images/passion-projects/consistency.png" target="_blank" class="image-container">
-    <img src="/assets/images/passion-projects/consistency.png" alt="Google Spreadsheet with travel itinerary options for a trip to Hawaii" class="preview-image">
+  <a href="{{ baseUrl }}assets/images/passion-projects/consistency.png" target="_blank" class="image-container">
+    <img src="{{ baseUrl }}assets/images/passion-projects/consistency.png" alt="Google Spreadsheet with travel itinerary options for a trip to Hawaii" class="preview-image">
   </a>
 </div>
 
