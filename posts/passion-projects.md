@@ -4,9 +4,6 @@ description: "Generative AI has brought my passion projects back to life. As a V
 date: 2024-10-21
 layout: layouts/blogpost-modern.njk
 headerImage: assets/images/passion-projects.png
-related:
-  - title: "Prompt example for spreadsheet to app"
-    url: "/posts/subposts/passion-projects-prompt.md"
 ---
 
 # Introduction
@@ -49,38 +46,37 @@ At the end of the prompting session after retrying with a summary of all of my [
   </a>
 </div>
 
-# Gen AI adds to my Skills
+# Augmenting my Skills
 
-Creating a functional, polished web application typically involves a lot of people and a lot of time. In my recent project, building a travel itinerary visualizer with ChatGPT, I discovered how dramatically AI could reduce that burden—acting as a developer, designer, architect, and even a sounding board, all in one.
+Creating a polished, functional web application usually requires a team of specialists and a considerable time investment. But with AI, the process changes entirely—bridging skill gaps and enhancing strengths, no matter where expertise lies. For instance, a great designer can use AI to handle coding, and a skilled coder can rely on AI for design. AI becomes the missing piece, augmenting skills that may be less developed while allowing individuals to focus on what they do best.
 
-In a traditional setup, building this app would have meant multiple specialists and weeks of work. As a Product Manager, I would start by defining the requirements and working closely with a frontend developer to build the interactive components, like the map and calendar. I’d need a UI designer to make it visually appealing, a software architect to handle the structural foundation, and plenty of coordination to ensure all these pieces came together seamlessly.
+In building a travel itinerary visualizer with AI, this became clear. Traditionally, creating an app like this would require a Product Manager to set requirements, a frontend developer to build interactive elements like maps and calendars, a UI designer to make it visually appealing, and a software architect to establish a strong foundation. Each role would come with time and financial costs, with developers spending weeks coding and designers crafting layouts and color schemes to ensure a cohesive, professional result.
 
-Each role would come with both time and financial costs. Developers would need days or weeks to code the map and calendar, integrate libraries, and ensure a smooth user experience. A designer would create the layouts, color schemes, and typography, ensuring the app looked clean and professional. And finally, I’d be there throughout, constantly aligning the team with the project’s “why” and “what” and offering feedback along the way.
+While tools like Tableau or Power BI could handle parts of the visualization, they lack the flexibility for creating fully interactive, user-friendly web apps. No-code platforms like Webflow or Bubble could help but would struggle with custom features, such as linking a dynamic, color-coded calendar to map markers.
 
-Using tools like Tableau or Power BI might have handled parts of this process, but with limitations. Visualization tools could create static maps or dashboards, but they don’t offer the flexibility to build fully interactive, user-friendly web apps without extensive customization. Even no-code platforms like Webflow or Bubble would struggle to handle custom features, such as the dynamic, color-coded calendar linked to map markers. And if I relied solely on these tools, I’d still need a developer to piece it all together into something cohesive.
+AI offers a new way forward, allowing anyone to take on complex projects that once required specialized teams. With AI as a collaborator, creating sophisticated applications becomes accessible, transforming ideas into polished, functional products more quickly and efficiently than ever before.
 
-# How ChatGPT's Brought the Skills of a Full Development Team
+# What roles did AI play?
 
-Enter ChatGPT, and everything changes. Instead of working with a whole team, I found myself working with a single AI assistant that could understand and execute on my high-level requirements. Here’s how it tackled each role:
-• Developer: ChatGPT took care of all the coding, using Leaflet.js to create an interactive map with color-coded markers and labels. It built the calendar dynamically based on my data, linking it to the map and adding tooltips and stop numbers—all based on simple requests like “add a marker” or “use color coding.”
-• UI Designer: With my instructions to “use a modern font” or “add subtle shadows,” ChatGPT crafted a clean, professional design that required no further touch-ups. What might have been days of design iterations became a matter of minutes, with every visual change handled directly in HTML and CSS.
-• Architect: ChatGPT structured the code logically, integrating JavaScript, HTML, and CSS smoothly and modularly. I didn’t have to worry about choosing libraries or setting up frameworks; ChatGPT took care of everything under the hood, leaving me to focus on the end result.
-• Sounding Board: Surprisingly, ChatGPT also served as a collaborative partner, offering suggestions that shaped the final product. With questions like “How can I make the calendar more user-friendly?” I received suggestions that would typically come from brainstorming sessions with a team.
+With ChatGPT, everything changes. Instead of working with a team, an AI assistant handled high-level requirements and executed across multiple roles:
 
-This collaborative experience took less than a day from start to finish. Instead of managing multiple handoffs or wrangling tools that only do part of the job, I iterated directly with ChatGPT. A few hours of prompting and feedback replaced what could have been weeks of traditional development time.
+### Developer 👩🏻‍💻
+ChatGPT handled all coding, using Leaflet.js to create an interactive map with color-coded markers, labels, and tooltips. The calendar was dynamically generated from data, linked to the map, and included stop numbers—all through simple requests like “add a marker” or “apply color coding.”
 
-# How Generative AI is Helping Me Reclaim My Passion Projects
+### UI Designer 🧑‍🎨
+Following prompts like “use a modern font” or “add subtle shadows,” ChatGPT crafted a clean, professional design with HTML and CSS. What typically takes days of design tweaks was done in minutes, with each visual adjustment applied directly.
 
-As I’ve moved into more senior roles, my time to build things has gradually faded. Day-to-day, I’m focused on strategy, aligning my team with our goals, and ensuring everyone understands the why and the what behind our work. It’s meaningful, but it leaves little room for the hands-on building that once fueled my career. And when I did find a moment to start a passion project—something experimental or just for fun—it often felt like a lost cause. I’d get partway in, realize I’d need skills I hadn’t practiced in years, or hit a wall with design polish, and the project would stall.
+### Architect 👷‍♀️
+ChatGPT organized the code logically, integrating JavaScript, HTML, and CSS into a modular structure. Decisions around libraries and frameworks were handled automatically, allowing complete focus on the final product.
 
-But now, Generative AI is changing that equation. With ChatGPT, I’ve found myself dusting off old projects and building proof-of-concepts I might otherwise have set aside. By describing high-level ideas, defining the features I want, and refining with iterative feedback, I can go from concept to completion without writing code. It feels almost like having an extra teammate—one that steps in wherever I need it, whether it’s coding, UI design, or even suggesting improvements.
+### Rubber Duck 🦆
+ChatGPT also acted as a collaborative partner, my [rubberduck](https://en.wikipedia.org/wiki/Rubber_duck_debugging), providing valuable suggestions that influenced the final design. For example, questions like “How can the calendar be more user-friendly?” sparked improvements that would usually come from team brainstorming.
 
-One recent project—a travel itinerary visualizer—showed me just how powerful this approach could be. Normally, this would have required a handful of roles: developer, designer, maybe even a data specialist. I would need tools like Leaflet for maps, perhaps Figma for mockups, and a lot of time spent switching between them. But with ChatGPT, I only needed to describe the features I wanted, like an interactive map with color-coded markers or a calendar linked to those markers. ChatGPT handled the code, made design adjustments, and iterated with me, quickly turning my high-level ideas into a functional web app.
+This collaboration took less than a 25 minutes from start to finish. Instead of managing multiple handoffs or using various tools, direct iteration with ChatGPT replaced what could have been weeks of traditional development.
 
-It didn’t just save me time; it gave me back the joy of creating something from scratch. I’m not saying it replaced a whole team or that every element was perfect right away—there were plenty of feedback loops to refine things. But it removed enough friction that building felt accessible again, allowing me to bring in the skills I already have as a product leader and lean on AI where I lack expertise.
+# Reclaiming Passion Projects
 
-This experience got me thinking: What happens when more people can do this? AI doesn’t magically turn everyone into a software developer, designer, or architect, but it does blur the lines between these roles. It fills in gaps where you lack skills, while allowing you to bring your own strengths to the table. For me, it means I get to be the product manager I’ve become, focusing on the vision and strategy, while AI supports me in realizing that vision directly.
+Generative AI has opened a new chapter for what can be accomplished by a single person. With tools like ChatGPT, high-level ideas can be transformed into polished, interactive applications without the need for specialized teams. This technology bridges skill gaps, allowing anyone to augment their strengths and focus on the bigger picture rather than the fine details of execution.
 
-In the future, I can see this becoming transformative not just for people like me but for teams across industries. Everyone could leverage AI to handle areas outside their expertise, bringing their own unique context and knowledge to drive the project. It’s exciting to think that anyone—whether they’re a designer, a product manager, or a developer—could take an idea and see it through to a tangible outcome, thanks to tools like ChatGPT.
+This journey marks the beginning of leveraging AI not only to bring personal projects to life but also to create more time and space to pursue high-level outcomes. AI enables more to be achieved with less effort and energy, setting a new standard for personal productivity and innovation. The possibilities are vast, and this is just the start.
 
-Generative AI won’t replace the nuanced skills and creativity that different specialists bring, but it’s starting to shift what’s possible. For me, it means rediscovering the joy of building things. And for others, it could mean fewer boundaries between ideas and execution, allowing each person to create in ways that were once out of reach.
