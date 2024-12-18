@@ -40,7 +40,7 @@ Visualizing the entire itinerary in one place is useful when sharing with other 
 
 Turning to ChatGPT for help made it possible to convert the spreadsheet into a dynamic travel itinerary web page, combining both functionality and visual appeal. With just a few prompts, the spreadsheet evolved into an interactive tool that brings travel plans to life on a map. The prompt used to build the page, though simplified from a longer conversation, captures the intended outcome. Even on its own, it delivers a result that aligns with the vision behind the planning process, transforming a simple spreadsheet into an engaging map that enhances the travel experience.
 
-At the end of the prompting session after retrying with a summary of all of my [prompts](/posts/subposts/passion-projects-prompt/) the LLM did produce a similar result. This is an area where LLMs will still have some challenges, and many companies are working on miniminzing the "hallucinations" that occur. However this output is still useful and the time to produce this was essentially one screenshot of a spreadsheet and one prompt!
+At the end of the prompting session after retrying with a summary of all of my [prompts]({{ baseUrl }}posts/subposts/passion-projects-prompt/) the LLM did produce a similar result. This is an area where LLMs will still have some challenges, and many companies are working on miniminzing the "hallucinations" that occur. However this output is still useful and the time to produce this was essentially one screenshot of a spreadsheet and one prompt!
 
 <div class="image-row">
   <a href="{{ baseUrl }}assets/images/passion-projects/consistency.png" target="_blank" class="image-container">
