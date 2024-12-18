@@ -1,0 +1,105 @@
+<h1>Testing Practices Cheat Sheet</h1>
+<h2>Testing Libraries and Frameworks</h2>
+<ul>
+<li>Jest: Primary testing framework</li>
+<li>Mockito: Mocking library for Java</li>
+<li>PowerMock: Extended mocking capabilities</li>
+</ul>
+<h2>Mocking and Stubbing Strategies</h2>
+<h3>Jest Mocks</h3>
+<pre><code class="language-javascript">jest.mock('module-name');
+const mockedFunction = jest.fn();
+</code></pre>
+<h3>Mockito Mocks</h3>
+<pre><code class="language-java">@Mock
+private DependencyClass mockDependency;
+
+when(mockDependency.method()).thenReturn(expectedValue);
+</code></pre>
+<h3>PowerMock for Static Methods</h3>
+<pre><code class="language-java">@RunWith(PowerMockRunner.class)
+@PrepareForTest(StaticClass.class)
+public class TestClass {
+    @Test
+    public void testStaticMethod() {
+        PowerMockito.mockStatic(StaticClass.class);
+        when(StaticClass.staticMethod()).thenReturn(expectedValue);
+    }
+}
+</code></pre>
+<h2>Fake Implementations</h2>
+<h3>In-Memory Repositories</h3>
+<pre><code class="language-java">public class InMemoryUserRepository implements UserRepository {
+    private Map&lt;String, User&gt; users = new HashMap&lt;&gt;();
+
+    @Override
+    public User findById(String id) {
+        return users.get(id);
+    }
+
+    // Other methods...
+}
+</code></pre>
+<h3>Test Doubles</h3>
+<pre><code class="language-java">public class TestDataSource implements DataSource {
+    private List&lt;String&gt; data = new ArrayList&lt;&gt;();
+
+    @Override
+    public String fetchData() {
+        return data.remove(0);
+    }
+
+    public void addTestData(String item) {
+        data.add(item);
+    }
+}
+</code></pre>
+<h2>Test Structure</h2>
+<ul>
+<li>Use descriptive test names (e.g., <code>should_return_user_when_valid_id_provided</code>)</li>
+<li>Follow Arrange-Act-Assert (AAA) pattern</li>
+<li>Group related tests in nested classes or describe blocks</li>
+</ul>
+<h2>Test Coverage</h2>
+<ul>
+<li>Aim for high test coverage (e.g., 80% or higher)</li>
+<li>Use code coverage tools to identify untested areas</li>
+</ul>
+<h2>Parameterized Tests</h2>
+<pre><code class="language-java">@ParameterizedTest
+@CsvSource({&quot;1, true&quot;, &quot;2, false&quot;, &quot;3, true&quot;})
+void isOdd_ShouldReturnCorrectResult(int input, boolean expected) {
+    assertEquals(expected, NumberUtils.isOdd(input));
+}
+</code></pre>
+<h2>Test Data Management</h2>
+<ul>
+<li>Use <code>@BeforeEach</code> or <code>beforeEach()</code> for test setup</li>
+<li>Use <code>@AfterEach</code> or <code>afterEach()</code> for test teardown</li>
+<li>Utilize test factories or builders for complex objects</li>
+</ul>
+<h2>Assertion Strategies</h2>
+<ul>
+<li>Use assertThat() for more readable assertions</li>
+<li>Implement custom matchers for complex assertions</li>
+</ul>
+<h2>Error Handling Tests</h2>
+<ul>
+<li>Test both positive and negative scenarios</li>
+<li>Verify exception messages and types</li>
+</ul>
+<h2>Integration Tests</h2>
+<ul>
+<li>Use <code>@SpringBootTest</code> for Spring Boot applications</li>
+<li>Mock external dependencies using <code>@MockBean</code></li>
+</ul>
+<h2>Performance Tests</h2>
+<ul>
+<li>Implement benchmarks for critical paths</li>
+<li>Use JMH (Java Microbenchmark Harness) for accurate measurements</li>
+</ul>
+<h2>Continuous Integration</h2>
+<ul>
+<li>Run tests automatically on each commit</li>
+<li>Fail builds if tests don't pass or coverage decreases</li>
+</ul>

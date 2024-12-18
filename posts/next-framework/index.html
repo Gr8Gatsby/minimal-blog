@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Next framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive scaling on mobile -->
+    <link rel="stylesheet" href="/minimal-blog/assets/css/styles.css">
+    <link rel="stylesheet" href="/minimal-blog/assets/css/blogpost.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            position: relative;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(60, 120, 200, 0.6), rgba(20, 20, 50, 0.7)),
+                        url("/minimal-blog/") center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: #ffffff;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .controls {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        /* Dark theme styling */
+        .dark-theme {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-theme .header {
+            background: linear-gradient(135deg, rgba(20, 20, 50, 0.8), rgba(10, 10, 20, 0.9)),
+                        url("/minimal-blog/") center/cover;
+        }
+
+        .dark-theme .theme-toggle {
+            color: #f1c40f; /* Sun icon color in dark mode */
+        }
+
+        /* Main content styling */
+        main {
+            max-width: 800px; /* Constrains width for desktop */
+            margin: 0 auto; /* Centers the content */
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 600px) {
+            .header {
+                height: 150px;
+                padding: 5px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+                padding-bottom: 5px;
+            }
+
+            .controls {
+                top: 10px;
+                right: 10px;
+            }
+
+            .theme-toggle {
+                font-size: 1.2rem;
+            }
+
+            .back-button {
+                font-size: 0.9rem;
+                top: 5px;
+                left: 10px;
+            }
+
+            .blog-post {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            main {
+                margin: 0 10px; /* Adds margin on mobile */
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Parallax Header Section with Overlay -->
+    <header class="header">
+        <a href="/minimal-blog/blog.html" class="back-button">← Back to Blog</a>
+        <div class="controls">
+            <!-- Sun and moon icons from Font Awesome -->
+            <i id="themeToggle" class="theme-toggle fas fa-moon"></i>
+        </div>
+        <h1>The Next framework</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <article class="blog-post"><h1>The Next Framework</h1>
+<p>Change is the only thing that is constant, humans are creative, intelligent, social. We are constantly trying to solve problems and make life easier to live. No doubt that many have tried before us, while it is impossible to know how many humans have lived on the low side it is maybe 80 billion, on the high side is it many just over 100 billion. We continue to learn and buid on the learnings from the past.</p>
+<h2>History</h2>
+<p>Programming and frameworks follow a similar pattern.</p>
+<p>1940s
+1950s
+1960s
+1970s
+1980s
+1990s
+2000s
+2010s
+2020s</p>
+<blockquote>
+<p>Article about do I need a framework?</p>
+</blockquote>
+<h2>Tech debt</h2>
+<p>Many developers spend a lot of time researching frameworks and tools that can make it easier to write good code. It is both an art and a science, but many independent decisions are made in all software projects. The next generation comes along en critiques the decisions of the past, while taking in the &quot;newest&quot; and best way to do it now.</p>
+<blockquote>
+<p>What's old is new again</p>
+</blockquote>
+<p>There has been a steady evolution of web frameworks, and they continue to shift to solve different problems.</p>
+<h2>Problems</h2>
+<p>Web development has been special it has evolved in an area where scientists were trying to find a way to share and link to different documents. Fundamentally it was a way to better organize and share information. When you have so much data and information the next tempting thing to do something with all of this amazing information!</p>
+<p>This starts innocently enough with maybe adding a chart to show data, then wanting the chart to be interactive, maybe accepting some data or user input to increase the interactivity.</p>
+<h2>Data is King</h2>
+<p>As the web applications started from data, the frameworks will naturally gravitate more towards solving data problems. Frameworks are better to solve the data problems, and tell compelling stories</p>
+</article>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+    <p>No rights reserved since 2024</p>
+</footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check OS theme preference and stored theme choice
+        function setInitialTheme() {
+            const storedTheme = localStorage.getItem('theme');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (storedTheme) {
+                body.classList.toggle('dark-theme', storedTheme === 'dark');
+            } else {
+                body.classList.toggle('dark-theme', prefersDarkScheme);
+            }
+
+            // Set the icon based on the current theme
+            updateThemeIcon();
+        }
+
+        // Update the theme icon based on current theme
+        function updateThemeIcon() {
+            if (body.classList.contains('dark-theme')) {
+                themeToggle.classList.remove('fa-moon');
+                themeToggle.classList.add('fa-sun');
+            } else {
+                themeToggle.classList.remove('fa-sun');
+                themeToggle.classList.add('fa-moon');
+            }
+        }
+
+        // Toggle theme on icon click and save preference
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon();
+        });
+
+        // Set the initial theme based on OS preference and stored choice
+        setInitialTheme();
+    </script>
+</body>
+</html>
