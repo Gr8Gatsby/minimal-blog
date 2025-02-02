@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ditch the Scroll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive scaling on mobile -->
+    <link rel="stylesheet" href="/minimal-blog/assets/css/styles.css">
+    <link rel="stylesheet" href="/minimal-blog/assets/css/blogpost.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            position: relative;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(60, 120, 200, 0.6), rgba(20, 20, 50, 0.7)),
+                        url("/minimal-blog/assets/images/ditch-the-scroll.png") center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: #ffffff;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .controls {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        /* Dark theme styling */
+        .dark-theme {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-theme .header {
+            background: linear-gradient(135deg, rgba(20, 20, 50, 0.8), rgba(10, 10, 20, 0.9)),
+                        url("/minimal-blog/assets/images/ditch-the-scroll.png") center/cover;
+        }
+
+        .dark-theme .theme-toggle {
+            color: #f1c40f; /* Sun icon color in dark mode */
+        }
+
+        /* Main content styling */
+        main {
+            max-width: 800px; /* Constrains width for desktop */
+            margin: 0 auto; /* Centers the content */
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 600px) {
+            .header {
+                height: 150px;
+                padding: 5px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+                padding-bottom: 5px;
+            }
+
+            .controls {
+                top: 10px;
+                right: 10px;
+            }
+
+            .theme-toggle {
+                font-size: 1.2rem;
+            }
+
+            .back-button {
+                font-size: 0.9rem;
+                top: 5px;
+                left: 10px;
+            }
+
+            .blog-post {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            main {
+                margin: 0 10px; /* Adds margin on mobile */
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Parallax Header Section with Overlay -->
+    <header class="header">
+        <a href="/minimal-blog/blog.html" class="back-button">← Back to Blog</a>
+        <div class="controls">
+            <!-- Sun and moon icons from Font Awesome -->
+            <i id="themeToggle" class="theme-toggle fas fa-moon"></i>
+        </div>
+        <h1>Ditch the Scroll</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <article class="blog-post"><h1>Ditch the Scroll. Pick Up a Book. Change Your Brain.</h1>
+<p>Let’s be honest—how often do we reach for our phones just to <em>fill time</em>?</p>
+<ul>
+<li>Waiting in line? Scroll.</li>
+<li>Bored on the couch? Scroll.</li>
+<li>Settling into bed? Scroll until we pass out.</li>
+</ul>
+<p>I found myself constantly scrolling through Instagram stories in the morning when I woke up to start my day, sometimes this would even dely me starting my day.</p>
+<p>The problem isn’t just the time we lose—it’s the way scrolling <em>shapes</em> our thinking. Social media and endless feeds serve up pre-packaged content, requiring nothing from us except passive consumption. It’s quick, easy, and addicting.</p>
+<p>But reading? Reading <em>demands</em> something different. It challenges our minds, sparks our imagination, and engages us in ways that scrolling never will.</p>
+<p>Having a little inpiration from <a href="https://www.threads.net/@stephanie.m.stimac">@Stefanie Stimac</a> and her regular posts about reading. I was inspired with one comment she made about reading instead of scrolling.</p>
+<h2>Your Brain on Reading vs. Your Brain on Scrolling</h2>
+<p>If you think the benefits of reading are just <em>nostalgic book-lover talk</em>, think again. Studies prove that reading doesn’t just entertain us—it fundamentally changes the way our brains work.</p>
+<p>🧘‍♂️ <strong>Reduces stress</strong> – Reading for just six minutes can lower stress levels by 68%, making it more effective than listening to music or drinking tea <a href="https://www.theargus.co.uk/news/4245076.reading-can-help-reduce-stress-according-to-university-of-sussex-research/">[The Argus]</a> .</p>
+<p>🧠 <strong>Improves focus &amp; memory</strong> – Unlike scrolling, which scatters attention and shortens our ability to concentrate, reading strengthens neural connections, helping us retain information and focus better over time <a href="https://www.healthline.com/health/benefits-of-reading-books">[Healthline]</a>.</p>
+<p>💖 <strong>Boosts empathy</strong> – Fiction readers are better at understanding emotions and interpreting social situations, making them more empathetic in real life <a href="https://www.healthline.com/health/benefits-of-reading-books">[Healthline]</a>.</p>
+<p>⏳ <strong>Increases lifespan</strong> – People who read books regularly have a 20% lower mortality risk compared to non-readers. Reading literally helps you live longer <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5105607/">[Social Science &amp; Medicine]</a>.</p>
+<p>Yet, most of us still default to screens instead of books. Why? Because reading requires <em>effort</em>. And we’ve become more used to consuming pre-made content that is easier load on our brains.</p>
+<h2>Watching vs. Imagining: The Passive vs. Active Mind</h2>
+<p>Scrolling feeds us fully formed images and narratives, designed to be consumed without thought. Every second, a new video, a new meme, a new perfectly curated aesthetic. Our brains don’t <em>create</em> anything—they just react.</p>
+<p>Reading, on the other hand, is active. A book hands you words, but <em>you</em> have to turn those words into images. <em>You</em> have to visualize the character’s face, hear their voice, and imagine the setting. This isn’t just more engaging—it strengthens creativity, memory, and cognitive flexibility.</p>
+<p>When you watch a movie, you’re seeing someone else’s interpretation of a story. When you read a book, you <em>build</em> the world yourself.</p>
+<h2>Why I Read on Flights Instead of Watching Movies</h2>
+<p>One of the best places to notice the difference between <em>passive</em> and <em>active</em> consumption is on a long flight.</p>
+<p>I always see the same thing: rows of passengers locked into their screens, bingeing movie after movie, unable to sleep. By the time we land, they look drained—zoned out, overstimulated, and exhausted.</p>
+<p>Meanwhile, reading on a flight does the opposite. It keeps my mind engaged but not overwhelmed. It helps me relax. And most of the time, I actually end up <em>falling asleep</em>—naturally, not from sheer screen fatigue.</p>
+<p>This isn’t an anti-movie argument (I love a good film). But when every spare moment is filled with passive consumption, we lose something. We lose creativity, focus, and the ability to sit with our own thoughts.</p>
+<h2>Read, Share, Repeat: The Power of Passing on a Book</h2>
+<p>Recently, I finished a John Grisham book and, instead of letting it collect dust, I mailed it to a friend with a handwritten note encouraging her to read it.</p>
+<div class="image-row">
+  <a href="/minimal-blog/assets/images/ditch-the-scroll/sharing-books.jpg" target="_blank" class="image-container">
+    <img src="/minimal-blog/assets/images/ditch-the-scroll/sharing-books.jpg" alt="The Exchange a book by John Grisham with a hand written note" class="inline-image">
+  </a>
+</div>
+<p>Why? Because books aren’t just <em>things</em>—they’re experiences. They deserve to be passed on.</p>
+<p>In an era where interactions are reduced to likes and comments, handing someone a book is a rare, personal gesture. It’s an invitation to unplug, slow down, and engage with something real.</p>
+<h2>Your Turn: Make the Swap</h2>
+<p>I’m not saying <em>never</em> scroll. But I am saying <strong>be intentional</strong> about what you feed your mind.</p>
+<h3>Here’s the challenge:</h3>
+<p>📖 <strong>Read instead of scrolling</strong> – Even just 10 minutes a day. Start small.<br>
+🎁 <strong>Pass along a book you love</strong> – Write a note. Make it personal.<br>
+📬 <strong>Got a great book? Send it my way!</strong> – I’m always open to my next read.</p>
+<p>Your brain deserves more than an algorithm-curated feed. Give it something real.</p>
+<hr>
+<h2>References &amp; Further Reading</h2>
+<ul>
+<li>University of Sussex study on stress reduction through reading: <a href="https://www.theargus.co.uk/news/4245076.reading-can-help-reduce-stress-according-to-university-of-sussex-research/">The Argus - 2009</a></li>
+<li>Health benefits of reading, including focus, memory, and empathy: <a href="https://www.healthline.com/health/benefits-of-reading-books">Healthline - 2019</a></li>
+<li>Study on increased lifespan for book readers: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5105607/">Social Science &amp; Medicine - 2017</a></li>
+</ul>
+</article>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+    <p>No rights reserved since 2024</p>
+</footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check OS theme preference and stored theme choice
+        function setInitialTheme() {
+            const storedTheme = localStorage.getItem('theme');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (storedTheme) {
+                body.classList.toggle('dark-theme', storedTheme === 'dark');
+            } else {
+                body.classList.toggle('dark-theme', prefersDarkScheme);
+            }
+
+            // Set the icon based on the current theme
+            updateThemeIcon();
+        }
+
+        // Update the theme icon based on current theme
+        function updateThemeIcon() {
+            if (body.classList.contains('dark-theme')) {
+                themeToggle.classList.remove('fa-moon');
+                themeToggle.classList.add('fa-sun');
+            } else {
+                themeToggle.classList.remove('fa-sun');
+                themeToggle.classList.add('fa-moon');
+            }
+        }
+
+        // Toggle theme on icon click and save preference
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon();
+        });
+
+        // Set the initial theme based on OS preference and stored choice
+        setInitialTheme();
+    </script>
+</body>
+</html>
