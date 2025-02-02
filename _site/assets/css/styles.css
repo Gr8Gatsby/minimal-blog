@@ -1,8 +1,29 @@
+/* Apply a single, consistent font across all elements */
+body, h1, h2, h3, h4, h5, h6, p, a, span, button, input, textarea {
+    font-family: 'Inter', Arial, sans-serif; /* Replace with your preferred font */
+}
+
 /* General body styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif; /* Modern font */
     color: #333; /* Dark text for readability */
+}
+
+/* Inline image styling */
+.inline-image {
+    width: 200px;  /* Adjust size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 12px;  /* Rounded corners */
+    display: inline-block; /* Keeps the image inline with text */
+    vertical-align: middle; /* Aligns with surrounding text */
+    margin: 5px 10px; /* Adds space around the image */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    transition: transform 0.2s ease-in-out;
+}
+
+.inline-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Header styling */

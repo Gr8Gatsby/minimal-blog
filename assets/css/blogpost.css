@@ -6,7 +6,6 @@
 }
 
 body {
-    font-family: 'Georgia', serif;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -34,7 +33,6 @@ body {
 .header h1 {
     font-size: 2.2em;
     margin: 20px 0;
-    font-family: 'Helvetica Neue', sans-serif;
     text-align: center;
 }
 
@@ -65,7 +63,12 @@ main {
 
 p {
     margin-bottom: 1.5em;
-    font-family: 'Georgia', serif;
+}
+
+.blog-post ul {
+    padding-left: 20px; /* Adjusts indentation */
+    margin-left: 20px;  /* Ensures spacing is uniform */
+    margin-bottom: 10px;
 }
 
 /* Link styling */
