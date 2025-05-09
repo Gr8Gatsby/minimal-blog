@@ -107,12 +107,17 @@ footer {
 
 .image-row {
     display: flex;
-    gap: 20px; /* Adjust spacing between images as needed */
-  }
-  
-  .image-container {
-    text-align: center; /* Center-aligns content within each container */
-  }
+    justify-content: center; /* Centers images horizontally */
+    gap: 20px; /* Adjust spacing between images */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin: 20px 0; /* Add some spacing around the row */
+}
+
+.image-container {
+    flex: 1; /* Allows flexibility */
+    max-width: 45%; /* Ensures images don’t exceed half the container width */
+    text-align: center; /* Centers content within the container */
+}
   
   .preview-image {
     max-width: 100%;

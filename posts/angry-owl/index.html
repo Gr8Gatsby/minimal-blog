@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goodbye, Angry Owl. Bonjour, ChatGPT.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive scaling on mobile -->
+    <link rel="stylesheet" href="/minimal-blog/assets/css/styles.css">
+    <link rel="stylesheet" href="/minimal-blog/assets/css/blogpost.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            position: relative;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(60, 120, 200, 0.6), rgba(20, 20, 50, 0.7)),
+                        url("/minimal-blog/assets/images/angry-owl.png") center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: #ffffff;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .controls {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        /* Dark theme styling */
+        .dark-theme {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-theme .header {
+            background: linear-gradient(135deg, rgba(20, 20, 50, 0.8), rgba(10, 10, 20, 0.9)),
+                        url("/minimal-blog/assets/images/angry-owl.png") center/cover;
+        }
+
+        .dark-theme .theme-toggle {
+            color: #f1c40f; /* Sun icon color in dark mode */
+        }
+
+        /* Main content styling */
+        main {
+            max-width: 800px; /* Constrains width for desktop */
+            margin: 0 auto; /* Centers the content */
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 600px) {
+            .header {
+                height: 150px;
+                padding: 5px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+                padding-bottom: 5px;
+            }
+
+            .controls {
+                top: 10px;
+                right: 10px;
+            }
+
+            .theme-toggle {
+                font-size: 1.2rem;
+            }
+
+            .back-button {
+                font-size: 0.9rem;
+                top: 5px;
+                left: 10px;
+            }
+
+            .blog-post {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            main {
+                margin: 0 10px; /* Adds margin on mobile */
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Parallax Header Section with Overlay -->
+    <header class="header">
+        <a href="/minimal-blog/blog.html" class="back-button">← Back to Blog</a>
+        <div class="controls">
+            <!-- Sun and moon icons from Font Awesome -->
+            <i id="themeToggle" class="theme-toggle fas fa-moon"></i>
+        </div>
+        <h1>Goodbye, Angry Owl. Bonjour, ChatGPT.</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <article class="blog-post"><h1><strong>Goodbye, Angry Owl. Bonjour, ChatGPT.</strong></h1>
+<p>Recently, USA Today reported that Duolingo is replacing many of its contract workers with AI [<a href="https://www.usatoday.com/story/tech/news/2025/04/30/duolingo-ai-first-contract-workers-replaced/83366078007/">source</a>]. These contractors helped create and evaluate language-learning content, but now the company is leaning heavily into generative AI to do the job.</p>
+<p>That headline prompted a knowing smile—because long before Duolingo made the switch to AI, a similar transition to AI for language learning had already occurred for me.</p>
+<p>For over 900 days, dedication to Duolingo was a daily ritual: opening the app, completing lessons, protecting streaks, and earning XP. The app's design is effective at keeping users hooked. That dramatic little owl has a way of inducing guilt for skipping a day.</p>
+<div class="image-row">
+  <a href="/minimal-blog/assets/images/angry-owl/900.png" target="_blank" class="image-container">
+    <img src="/minimal-blog/assets/images/angry-owl/900.png" alt="Angry Duolingo owl and ChatGPT illustration" class="inline-image">
+  </a>
+  <a href="/minimal-blog/assets/images/angry-owl/900-2.png" target="_blank" class="image-container">
+    <img src="/minimal-blog/assets/images/angry-owl/900-2.png" alt="Angry Duolingo owl and ChatGPT illustration" class="inline-image">
+  </a>
+</div> 
+<p>But the longer the app was used, the more apparent it became: the process was less about learning to speak French and more about learning to win a game.</p>
+<p>Eventually, a desire emerged for something more practical. The goal wasn't just to memorize vocabulary, but to navigate real-life situations: walking into a bakery to order a croissant, or asking for dry cleaning without fumbling. The aim was to learn the phrases real people use in everyday conversations.</p>
+<p>That's when ChatGPT became my tool of choice.</p>
+<p>It started with small requests: common French phrases for use at a restaurant, when picking up laundry, or for polite small talk. The objective was to understand not just the words, but the tone and how people actually speak.</p>
+<p>This approach quickly snowballed. It became clear that ChatGPT could be used not just to translate or explain, but to simulate conversation. A custom GPT was even trained to match specific learning levels and styles. After providing instructions on how to learn conversations for certain situations, this method proved much more helpful and enjoyable.</p>
+<p>Instead of tapping through grammar exercises or avoiding penalties for wrong answers, the focus shifted to speaking. Practicing real dialogue. Asking questions. Requesting corrections. Saying &quot;Parlez plus lentement&quot; and having the AI actually slow down.</p>
+<p>There were hiccups. Sometimes the AI went too fast. Sometimes it assumed too much. But that was part of the learning curve—not just for the me, but for the AI too. The AI had to be taught how to teach effectively. And in that process, engagement surpassed anything experienced while chasing streaks and hearts on other platforms.</p>
+<p>Now, 10 to 20 minutes a day are spent having real conversations. Asking for help. Getting corrected. Repeating phrases. And when traveling, the practiced skills are put to use. Even the awkward moment when someone in France switches to English is handled with growing confidence, gently steering the conversation back into French.</p>
+<p>It's not that Duolingo has no value. The free version is still used occasionally, mostly to check vocabulary or refresh something quickly. But the subscription is cancelled. The owl has been outgrown.</p>
+<p>AI isn't just disrupting companies like Duolingo. It's reshaping how learning happens altogether. There's no need to wait for an app to update its features when the necessary tools are already available—tools that adapt to the user, not the other way around.</p>
+<p>So yes, Duolingo is replacing its contractors with AI. But for some, Duolingo was replaced by a personalized AI approach resulting in more learning, more speaking, and a dawning sense of fluency that actually matters.</p>
+<p>Let me know how you feel about the Angry Owl!</p>
+</article>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+    <p>No rights reserved since 2024</p>
+</footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check OS theme preference and stored theme choice
+        function setInitialTheme() {
+            const storedTheme = localStorage.getItem('theme');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (storedTheme) {
+                body.classList.toggle('dark-theme', storedTheme === 'dark');
+            } else {
+                body.classList.toggle('dark-theme', prefersDarkScheme);
+            }
+
+            // Set the icon based on the current theme
+            updateThemeIcon();
+        }
+
+        // Update the theme icon based on current theme
+        function updateThemeIcon() {
+            if (body.classList.contains('dark-theme')) {
+                themeToggle.classList.remove('fa-moon');
+                themeToggle.classList.add('fa-sun');
+            } else {
+                themeToggle.classList.remove('fa-sun');
+                themeToggle.classList.add('fa-moon');
+            }
+        }
+
+        // Toggle theme on icon click and save preference
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon();
+        });
+
+        // Set the initial theme based on OS preference and stored choice
+        setInitialTheme();
+    </script>
+</body>
+</html>
