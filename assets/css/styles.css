@@ -10,15 +10,11 @@ body {
     color: #333; /* Dark text for readability */
 }
 
-/* Inline image styling */
 .inline-image {
-    width: 200px;  /* Adjust size as needed */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 12px;  /* Rounded corners */
-    display: inline-block; /* Keeps the image inline with text */
-    vertical-align: middle; /* Aligns with surrounding text */
-    margin: 5px 10px; /* Adds space around the image */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    width: 100%; /* Ensures the image fills its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.2s ease-in-out;
 }
 
