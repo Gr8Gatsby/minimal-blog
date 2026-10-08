@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-pipeup-doc="qioPv74XDM7Kp8a-:goaDAEcnqsG5sHszva38sYbjHzSuXR7E_885p3AZVBc">
 <head>
     <meta charset="UTF-8">
     <title>{{ title }}</title>
@@ -143,7 +143,7 @@
 
     <!-- Main Content Section -->
     <main>
-        <article class="blog-post">{{ content | safe }}</article>
+        <article class="blog-post" data-pipeup-id="post">{{ content | safe }}</article>
     </main>
 
     <!-- Footer Section -->
@@ -190,5 +190,6 @@
         // Set the initial theme based on OS preference and stored choice
         setInitialTheme();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/pipeup@0.5.0/dist/pipeup.min.js"></script>
 </body>
 </html>
