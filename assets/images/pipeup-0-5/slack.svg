@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Lato, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1200" height="560" fill="#3f0e40"/>
+  <!-- sidebar -->
+  <rect x="0" y="0" width="250" height="560" fill="#3f0e40"/>
+  <rect x="0" y="0" width="250" height="56" fill="#350d36"/>
+  <text x="20" y="35" font-size="18" font-weight="900" fill="#fff">Northwind</text>
+  <g font-size="15" fill="#cfc3cf">
+    <text x="20" y="92">Threads</text><text x="20" y="122">Huddles</text><text x="20" y="152">Drafts &amp; sent</text>
+    <text x="20" y="196" font-size="14" fill="#a99aa9">Channels</text>
+    <text x="28" y="226"># general</text><text x="28" y="254"># launch</text>
+  </g>
+  <rect x="8" y="266" width="234" height="32" rx="7" fill="#1164a3"/><text x="28" y="288" font-size="15" font-weight="700" fill="#fff"># team-reports</text>
+  <g font-size="15" fill="#cfc3cf"><text x="28" y="324"># random</text><text x="20" y="372" font-size="14" fill="#a99aa9">Direct messages</text><text x="28" y="402">Sam</text><text x="28" y="430">Ada</text><text x="28" y="458">Lee</text></g>
+  <!-- main -->
+  <rect x="250" y="0" width="950" height="560" fill="#fff"/>
+  <text x="274" y="36" font-size="18" font-weight="900" fill="#1d1c1d"># team-reports</text>
+  <line x1="250" y1="56" x2="1200" y2="56" stroke="#e0e0e0" stroke-width="2"/>
+  <!-- Sam -->
+  <rect x="274" y="76" width="40" height="40" rx="8" fill="#36c5f0"/><text x="294" y="104" font-size="19" font-weight="900" text-anchor="middle" fill="#fff">S</text>
+  <text x="326" y="92" font-size="15" font-weight="900" fill="#1d1c1d">Sam</text><text x="364" y="92" font-size="12" fill="#616061">10:42 AM</text>
+  <text x="326" y="114" font-size="15" fill="#1d1c1d">Here is the Q3 launch plan, take a look!</text>
+  <rect x="326" y="128" width="330" height="64" rx="10" fill="#fff" stroke="#c9c9c9" stroke-width="2"/>
+  <rect x="342" y="142" width="36" height="36" rx="7" fill="#e8912d"/><text x="360" y="165" font-size="11" font-weight="900" text-anchor="middle" fill="#fff">HTML</text>
+  <text x="392" y="157" font-size="15" font-weight="900" fill="#1d1c1d">q3-launch-plan.html</text><text x="392" y="177" font-size="13" fill="#616061">HTML</text>
+  <!-- Ada -->
+  <rect x="274" y="216" width="40" height="40" rx="8" fill="#2eb67d"/><text x="294" y="244" font-size="19" font-weight="900" text-anchor="middle" fill="#fff">A</text>
+  <text x="326" y="232" font-size="15" font-weight="900" fill="#1d1c1d">Ada</text><text x="364" y="232" font-size="12" fill="#616061">11:05 AM</text>
+  <text x="326" y="254" font-size="15" fill="#1d1c1d">Looks great! Are you sure the team can hit this date?</text>
+  <!-- Sam -->
+  <rect x="274" y="284" width="40" height="40" rx="8" fill="#36c5f0"/><text x="294" y="312" font-size="19" font-weight="900" text-anchor="middle" fill="#fff">S</text>
+  <text x="326" y="300" font-size="15" font-weight="900" fill="#1d1c1d">Sam</text><text x="364" y="300" font-size="12" fill="#616061">11:07 AM</text>
+  <text x="326" y="322" font-size="15" fill="#1d1c1d">Which date? The beta or the launch?</text>
+  <!-- Lee -->
+  <rect x="274" y="352" width="40" height="40" rx="8" fill="#ecb22e"/><text x="294" y="380" font-size="19" font-weight="900" text-anchor="middle" fill="#fff">L</text>
+  <text x="326" y="368" font-size="15" font-weight="900" fill="#1d1c1d">Lee</text><text x="360" y="368" font-size="12" fill="#616061">11:09 AM</text>
+  <text x="326" y="390" font-size="15" fill="#1d1c1d">The one in the middle of the page, I think?</text>
+  <!-- composer -->
+  <rect x="274" y="450" width="902" height="84" rx="9" fill="#fff" stroke="#868686" stroke-width="2"/>
+  <text x="294" y="486" font-size="15" fill="#868686">Message #team-reports</text>
+  <line x1="274" y1="500" x2="1176" y2="500" stroke="#e0e0e0" stroke-width="2"/>
+  <g fill="#616061"><circle cx="302" cy="518" r="5"/><circle cx="332" cy="518" r="5"/><circle cx="362" cy="518" r="5"/></g>
+  <path d="M1136 508 L1160 518 L1136 528z" fill="#007a5a"/>
+</svg>

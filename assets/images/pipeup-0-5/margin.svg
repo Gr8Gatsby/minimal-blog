@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1200" height="400" fill="#f4f3ee"/>
+  <rect x="150" y="26" width="540" height="348" rx="14" fill="#fff" stroke="#d2d0c8" stroke-width="2"/>
+  <text x="188" y="78" font-size="24" font-weight="700" fill="#111">Q3 launch plan</text>
+  <rect x="188" y="100" width="450" height="9" rx="4.5" fill="#d2d0c8"/><rect x="188" y="120" width="400" height="9" rx="4.5" fill="#d2d0c8"/>
+  <text x="188" y="172" font-size="17" fill="#2f3437">Beta opens on June 3. We launch to everyone on</text>
+  <rect x="188" y="182" width="136" height="26" rx="4" fill="#fbf3db"/><text x="194" y="201" font-size="17" fill="#111">July 15, 2026</text><text x="330" y="201" font-size="17" fill="#2f3437">, with support</text>
+  <rect x="188" y="226" width="450" height="9" rx="4.5" fill="#d2d0c8"/><rect x="188" y="246" width="380" height="9" rx="4.5" fill="#d2d0c8"/>
+  <rect x="188" y="282" width="450" height="70" rx="10" fill="#eeede7"/><text x="413" y="324" font-size="15" fill="#55544f" text-anchor="middle">timeline chart</text>
+  <line x1="450" y1="196" x2="730" y2="196" stroke="#c9b87a" stroke-width="2"/>
+  <rect x="730" y="130" width="330" height="116" rx="12" fill="#fff" stroke="#c4c2b9" stroke-width="2"/>
+  <rect x="748" y="148" width="30" height="30" rx="8" fill="#e1f5ee"/><text x="763" y="170" font-size="15" font-weight="700" text-anchor="middle" fill="#0F6E56">A</text>
+  <text x="790" y="169" font-size="15" font-weight="700" fill="#111">Ada</text>
+  <text x="748" y="206" font-size="17" fill="#2f3437">Are you sure the team can</text><text x="748" y="228" font-size="17" fill="#2f3437">hit this date?</text>
+</svg>
