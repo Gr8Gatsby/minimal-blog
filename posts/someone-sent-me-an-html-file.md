@@ -3,8 +3,8 @@ title: "Someone Sent Me an .html File"
 description: "More of my co-workers are sending me HTML files, and I have no good way to give feedback on them. So I built something."
 date: 2026-10-08
 layout: layouts/blogpost-modern.njk
-headerImage: assets/images/banner.jpg
-headerImagePosition: "center"
+headerImage: assets/images/pipeup-0-5/slack.svg
+headerImagePosition: "top"
 headerImageHeight: "240px"
 ---
 
